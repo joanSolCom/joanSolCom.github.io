@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Juan Soler-Company</title>
+
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">         
+    <link rel="stylesheet" href="css/templatemo-style.css"> 
+            <script src="js/research.js"></script> 
+
+</head>
+<body>
+<div class="banner tm-header">
+            <div class="container-fluid">
+                <div class="tm-header-inner">
+                    <a href="index.html" class="navbar-brand tm-site-name">Juan Soler-Company</a>
+                    
+                    <!-- navbar -->
+                    <nav class="navbar tm-main-nav">
+
+                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                        
+                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item index">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item research">
+                                    <a href="research.html" class="nav-link">Research</a>
+                                </li>
+                                <li class="nav-item capitanmartu">
+                                    <a href="capitanmartu.html" class="nav-link">Capitanmartu</a>
+                                </li>
+                                <li class="nav-item teaching">
+                                    <a href="teaching.html" class="nav-link">Teaching</a>
+                                </li>
+                                <li class="nav-item about">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                
+                            </ul>                        
+                        </div>
+                        
+                    </nav>  
+
+                </div>                                  
+            </div>            
+        </div>
+
+    <script>
+        $( document ).ready(function() {
+            var url = window.location.pathname;
+            var pieces = url.split("/");
+            var file = pieces[pieces.length-1].replace(".html","");
+            console.log(".nav-item."+file);
+            $(".nav-item."+file).addClass("active");
+
+
+        });
+
+    </script>
+
+
+        <section class="tm-section">
+        <link rel="stylesheet" href="css/research.css"> 
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-12">
+                    <br/>
+                    <h2 class="tm-gold-text">Research Topics</h2>
+                    <p>My main research topics are:</p> 
+                    <ul>
+                        <li>Author Profiling: What kind of person wrote a text? Is it a man or a woman? Is the author young or old? Is he from Barcelona or from Moscow? Author profiling deals with the identification of demographic traits of the writer of a text. The main hypothesis of this task is that people that share demographic traits also share linguistic patterns that can be identified to characterize the type of person that wrote a text.</li>
+                        <li>Author Identification: Given a set of texts and a set of potential authors, identify which one of the authors is most likely the author of a text. The hypothesis here is that the writing style of an author is unique enough to be automatically distinguished from a set of candidates.</li>
+                        <li>Feature Engineering: Given a classification problem, characterize the instances in a way that a machine learning algorithm effectively distinguishes between the possible labels.</li>
+
+                    </ul>
+                    <p>I'm currently applying those research topics to real-world cases of the forensic linguistic kind in european projects that concern security issues.</p>
+                    <br/>
+                        <h2 class="tm-gold-text">List of publications</h3>
+                        <p>These are my (updated) list of publications from recent to old:</p> 
+                        
+                        <button class="accordion"><h5>2018</h5></button>
+                        <div class="panel">
+                            <p>
+                                <b>Automatic Identification of Texts Written by Authors with Alzheimer's Disease.</b><br/>
+                                Juan Soler-Company and Leo Wanner.<br/>
+                                Cognitive Society Annual Meeting (Cogsci), Madison, Wisconsin, USA<br/>
+                                July 2018<br/>
+                                Alzheimer's disease leads to a degradation of vocabulary and communication skills. This makes us assume that writings of individual authors can be classified automatically into "pre-Alzheimer's period'' and "Alzheimer's period''. But the writing style of an author is highly individual. Can we still detect whether any given novel is written by an author who suffers from Alzheimer's? To assess this, we use a corpus of novels by three well-known writers who were diagnosed with Alzheimer's: Iris Murdoch, Terry Pratchett and Agatha Christie. Using a mostly stylistic set of features we are able to distinguish between novels written under the influence of the disease and novels written by healthy writers with more than 82% accuracy. The classification of the novels of a given author into "pre-Alzheimer's period'' and "Alzheimer's period'' is accomplished with more than 86% accuracy. 
+                            </p>
+                            <b><a target="blank" href="papers/CogSci_2018.pdf">Open Paper</a></b>
+                        </div>
+                        <br/>
+                        <button class="accordion"><h5>2017</h5></button>
+                        <div class="panel">
+                            <p>
+                                <b>On the role of syntactic dependencies and discourse relations for author and gender identification.</b><br/>
+                                Juan Soler-Company and Leo Wanner.<br/>
+                                Journal of Pattern Recognition Letters<br/>
+                                2017<br/>
+                                Author and author gender identification are two major tasks in the context of profiling of authors of written material. Author identification (or, more precisely, “authorship attribution”) copes with the assignment of the author, who is to be chosen from a given list of author names, to a piece of written material. Gender identification deals with the prediction of the gender of the author (male vs. female). Both tasks are very relevant to a number of applications, including, e.g., plagiarism and deception detection, document authenticity verification, and blackmailing. State of the art in both fields tends to rely mainly upon lexical and token (sequence) distribution features. But this means to neglect numerous linguistic studies that clearly indicate the high relevance of “deep linguistic”, i.e., syntactic and discourse, features to the characterization of the style of an author or a group of authors. Our work on author and gender identification confirms this relevance. We show with two different genres, namely blog posts and literary writings, that the use of deep linguistic features is very effective. It leads to  > 78% (in the case of blog posts) and  > 91% (in the case of literary writings) of accuracy in author identification and  > 89% (blog posts) and  > 90% (literary writings) of accuracy in gender identification.
+                            </p>
+                            <b><a target="blank" href="papers/PRLetters.pdf">Open Paper</a></b>
+                            <br/><br/>
+                            <p>
+                                <b>Towards the understanding of gaming audiences by modeling Twitch emotes</b><br/>
+                                Francesco Barbieri, Luis Espinosa-Anke, Juan Soler-Company, Miguel Ballesteros and Horacio Saggion<br/>
+                                Workshop on Noisy User-generated Text (W-NUT), Copenhaguen, Denmark<br/>
+                                October 2017
+                                <br/>
+                                Videogame streaming platforms have become
+                                 a paramount example of noisy usergenerated
+                                 text. These are websites where
+                                 gaming is broadcasted, and allows interaction
+                                 with viewers via integrated chatrooms.
+                                 Probably the best known platform
+                                 of this kind is Twitch, which has more
+                                 than 100 million monthly viewers. Despite
+                                 these numbers, and unlike other platforms
+                                 featuring short messages (e.g. Twitter),
+                                 Twitch has not received much attention
+                                 from the Natural Language Processing
+                                 community. In this paper we aim at
+                                 bridging this gap by proposing two important
+                                 tasks specific to the Twitch platform,
+                                 namely (1) Emote prediction; and
+                                 (2) Trolling detection. In our experiments,
+                                 we evaluate three models: a BOW baseline,
+                                 a logistic supervised classifiers based
+                                 on word embeddings, and a bidirectional
+                                 long short-term memory recurrent neural
+                                 network (LSTM). Our results show that
+                                 the LSTM model outperforms the other
+                                 two models, where explicit features with
+                                 proven effectiveness for similar tasks were
+                                 encoded.
+                            </p>
+                            <b><a target="blank" href="papers/WNUT.pdf">Open Paper</a></b>
+                            <br/><br/>
+                            <p>
+                                <b>On the Relevance of Syntactic and Discourse Features for Author Profiling and Identification</b><br/>
+                                Juan Soler-Company and Leo Wanner.<br/>
+                                Conference of the European Chapter of the Association for Computational Linguistics (EACL), Valencia, Spain <br/>
+                                May 2017<br/>
+                                The majority of approaches to author profiling and author identification focus mainly on lexical features, ie, on the content of a text. We argue that syntactic dependency and 
+                                discourse features play a significantly more prominent role than they were given in the past. 
+                                We show that they achieve state-of-the-art performance in author and gender identification 
+                                on a literary corpus while keeping the feature set small: the used feature set is composed of 
+                                only 188 features and still outperforms the winner of the PAN 2014 shared task on author 
+                                verification in the literary genre.
+                            </p>
+                            <b><a target="blank" href="papers/EACL.pdf">Open Paper</a></b>
+                        </div>
+                        <br/>
+                        <button class="accordion"><h5>2016</h5></button>
+                        <div class="panel">
+                            <p>
+                                <b>Authorship Attribution using Syntactic Dependencies</b><br/>
+                                Juan Soler-Company and Leo Wanner.<br/>
+                                International Conference of the Catalan Association for Artificial Intelligence (CCIA), Barcelona, Spain <br/>
+                                October 2016<br/>
+                                Authorship attribution deals with the prediction of the author of a (usually written) discourse. This is of high relevance to a number of applications, including plagiarism detection, authenticity verification and deception detection. So far, most of the state-of-the-art approaches to author attribution rely mainly upon lexical and token (sequence) distribution features. But this means to neglect numerous linguistic studies that clearly indicate the high relevance of syntactic features to the characterization of a personal style of an author. We show in an experiment with 26 authors that indeed the use of syntactic features helps us to achieve a >77% an accuracy.
+                            </p>
+                            <b><a target="blank" href="papers/CCIA.pdf">Open Paper</a></b>
+                            <br/><br/>
+                            <p>
+                                <b>Use of Discourse and Syntactic Features for Gender Identification.</b> Best Poster Presentation Award<br/>
+                                Juan Soler-Company and Leo Wanner.<br/>
+                                Starting AI Researcher Symposium (STAIRS), The Hague, Netherlands<br/>
+                                August 2016<br/>
+                                Author profiling and Gender Identification have gained relevance in the last few years. The goal of the research in these fields is to extract certain demographic information on the authors of texts by analyzing their writing at several levels. In our work, we address the problem of the identification of the gender (male vs. female) of the authors of opinion pieces published online. Unlike the overwhelming majority of the proposals, we argue that the use of deeper linguistic features (i.e., syntactic and discourse structure), instead of mainly lexical features leads to a higher accuracy of gender identification. Using such features with supervised machine learning, we achieve very competitive results with accuracies over 84%.
+                            </p>
+                            <b><a target="blank" href="papers/STAIRS.pdf">Open Paper</a></b>
+                            <br/><br/>
+                            <p>
+                                <b>A Semi-Supervised Approach for Gender Identification</b><br/>
+                                Juan Soler-Company and Leo Wanner.<br/>
+                                Language Resources and Evaluation Conference (LREC), Portoroz, Slovenia<br/>
+                                May 2016<br/>
+                                In most of the research studies on Author Profiling, large quantities of correctly labeled data are used to train the models. However, this does not reflect the reality in forensic scenarios: in practical linguistic forensic investigations, the resources that are available to
+                                profile the author of a text are usually scarce. To pay tribute to this fact, we implemented a Semi-Supervised Learning variant of the k
+                                nearest neighbors algorithm that uses small sets of labeled data and a larger amount of unlabeled data to classify the authors of texts by
+                                gender (man vs woman). We describe the enriched KNN algorithm and show that the use of unlabeled instances improves the accuracy
+                                of our gender identification model. We also present a feature set that facilitates the use of a very small number of instances, reaching
+                                accuracies higher than 70% with only 113 instances to train the model. It is also shown that the algorithm also performs well using publicly available data.
+                            </p>
+                            <b><a target="blank" href="papers/LREC16.pdf">Open Paper</a></b>
+                        </div>
+                        <br/>
+                        <button class="accordion"><h5>2015</h5></button>
+                        <div class="panel">
+                            <p>
+                                <b>Multiple Language Gender Identification for Blog Posts.</b><br/>
+                                Juan Soler-Company and Leo Wanner.<br/>
+                                Cognitive Society Annual Meeting (Cogsci), Pasadena, California, USA<br/>
+                                August 2015<br/>
+                                In data-driven gender identification, it has been so far largely assumed that the same types of (mostly content-oriented) data features can be used to differentiate between male and female authors. In most cases, this distinction is done in a monolingual scenario. In this work, we discuss a set of features that distinguish between genders in six different datasets 
+                                of blog data in English, Spanish, French, German, Italian and Catalan with accuracies that range from 77% to 88%. Using a reduced set of language-independent structural features in a multilingual scenario we first identify the gender and then the gender and language of the 
+                                author, achieving accuracies higher than 74%.
+                            </p>
+                            <b><a target="blank" href="papers/COGSCI.pdf">Open Paper</a></b>
+                            <br/><br/>
+                            <p>
+                                <b>Visualizing Deep-Syntactic Parser Output</b><br/>
+                                Juan Soler-Company, Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner.<br/>
+                                Conference of the North American Chapter of the Association for Computational Linguistics (NAACL), Denver, Colorado, USA<br/>
+                                May 2015<br/>
+                                "Deep-syntactic" dependency structures bridge the gap between the surface-
+                                syntactic structures as produced by state-of-the-art dependency parsers and semantic 
+                                logical forms in that they abstract away from surfacesyntactic idiosyncrasies, but still keep 
+                                the linguistic structure of a sentence. They have thus a great potential for such downstream 
+                                applications as machine translation and summarization. In this demo paper, we propose an 
+                                online version of a deep-syntactic parser that outputs deep-syntactic structures from plain 
+                                sentences and visualizes them using the Brat tool. Along with the deep-syntactic structures, 
+                                the user can also inspect the visual presentation of the surface-syntactic structures that serve 
+                                as input to the deep-syntactic parser and that are produced by the joint tagger and syntactic 
+                                transition-based parser ran in the pipeline before deep-syntactic parsing takes place.
+                            </p>
+                            <b><a target="blank" href="papers/NAACL.pdf">Open Paper</a></b>
+                        </div>
+                        <br/>
+                        <button class="accordion"><h5>2014</h5></button>
+                        <div class="panel">
+                        <p>
+                            <b>Evaluating content-independent features for personality recognition</b><br/>
+                            Juan Soler-Company, Ben Verhoeven and Walter Daelemans.<br/>
+                            Multi Media on Workshop on Computational Personality Recognition. Orlando, Florida, USA.<br/>
+                            July 2014<br/>
+                            This paper describes our submission for the WCPR14 shared task on computational 
+                            personality recognition. We have investigated whether the features proposed by Soler and 
+                            Wanner (2014) for gender prediction might also be useful in personality recognition. We 
+                            have compared these features with simple approaches using token unigrams, character 
+                            trigrams and liwc features. Although the newly investigated features seem to work quite well 
+                            on certain personality traits, they do not outperform the simple approaches.
+                        </p>
+                        <b><a target="blank" href="papers/BEN.pdf">Open Paper</a></b>
+                        <br/><br/>
+                        <p>
+                            <b>How to use less features and reach better performance in author gender identification</b><br/>
+                            Juan Soler-Company and Leo Wanner.<br/>
+                            Language Resources and Evaluation Conference (LREC), Reikiavik, Iceland<br/>
+                            May 2014<br/>
+                            Over the last years, author profiling in general and author gender identification in particular have become a popular research area
+                            due to their potential attractive applications that range from forensic investigations to online marketing studies. However, nearly all
+                            state-of-the-art works in the area still very much depend on the datasets they were trained and tested on, since they heavily draw on
+                            content features, mostly a large number of recurrent words or combinations of words extracted from the training sets. We show that using
+                            a small number of features that mainly depend on the structure of the texts we can outperform other approaches that depend mainly on the
+                            content of the texts and that use a huge number of features in the process of identifying if the author of a text is a man or a woman. Our
+                            system has been tested against a dataset constructed for our work as well as against two datasets that were previously used in other papers.
+                        </p>
+                        <b><a target="blank" href="papers/LREC14.pdf">Open Paper</a></b>
+                    </div>
+
+
+                    </div>    
+                    <div class="col-xs-12 col-sm-12">
+                        <br/>
+                        <h2 class="tm-gold-text">Resources</h2>
+                        Here are a list of interesting resources that you can use and check out!
+                        <br/><br/>
+                        <ul>
+                            <li>
+                                 <p>Datasets: Most of the data that was collected during my PhD can be found here: <a target="blank" href="https://github.com/joanSolCom/Datasets">Corpora</a>.</p>
+                            </li>
+                            <li>
+                                 <p>Code: Here you can use the code I developed to extract the features that I usually use in my experiments. It's written in Python and has many feature extraction modules inside. Requires pre-parsed files to compute the syntactic features. <a target="blank" href="https://github.com/joanSolCom/author_profiling_tools/tree/master/author_profiling_code">Author Profiling Code</a>.</p>
+                            </li>
+                            <li><p>My PhD Thesis: if someone is brave enough to read it, here it is: Feature Engineering for Author Profiling and Identification: On the Relevance of Syntax and Discourse. <a target="blank" href="papers/thesis.pdf">Thesis</a></p></li>
+
+                            <li>
+                                 <p>TwitchBot: A very useful bot to retrieve twitch chat content. It has not been revised lately, but will probably work (with small tweaks perhaps). You need a twitch username and a OAUTH token, creates as many threads as channels you wish to monitor. <a target="blank" href="https://github.com/joanSolCom/twitchbot ">TwitchBotR</a>.</p>
+                            </li>
+                        </ul>
+                    </div>                  
+                    
+
+                </div>
+
+                    
+                </div>
+
+            </div>
+        </section>
+               
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Juan Soler-Company</title>
+
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">         
+    <link rel="stylesheet" href="css/templatemo-style.css"> 
+            <script src="js/research.js"></script> 
+
+</head>
+<body>
+<div class="banner tm-header">
+            <div class="container-fluid">
+                <div class="tm-header-inner">
+                    <a href="index.html" class="navbar-brand tm-site-name">Juan Soler-Company</a>
+                    
+                    <!-- navbar -->
+                    <nav class="navbar tm-main-nav">
+
+                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                        
+                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item index">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item research">
+                                    <a href="research.html" class="nav-link">Research</a>
+                                </li>
+                                <li class="nav-item capitanmartu">
+                                    <a href="capitanmartu.html" class="nav-link">Capitanmartu</a>
+                                </li>
+                                <li class="nav-item teaching">
+                                    <a href="teaching.html" class="nav-link">Teaching</a>
+                                </li>
+                                <li class="nav-item about">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                
+                            </ul>                        
+                        </div>
+                        
+                    </nav>  
+
+                </div>                                  
+            </div>            
+        </div>
+
+    <script>
+        $( document ).ready(function() {
+            var url = window.location.pathname;
+            var pieces = url.split("/");
+            var file = pieces[pieces.length-1].replace(".html","");
+            console.log(".nav-item."+file);
+            $(".nav-item."+file).addClass("active");
+
+
+        });
+
+    </script>    
+
+        
+        <section class="tm-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="headIndex col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
+                        <h1 class="tm-gold-text tm-title">Research and Gaming</h1>
+                        <p class="tm-subtitle">Welcome to my personal webpage, in this page you will get information about my research and gamer life.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/publications.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Publications</h4>
+                            <p class="tm-margin-b-20">Get access to all my publications as a researcher in the field of Natural Language Processing</p>
+                            <a class="buttonLink tm-btn" target="blank" href="https://www.researchgate.net/profile/Juan_Soler_Company/contributions">ResearchGate</a>
+                            <a class="buttonLink tm-btn" target="blank" href="http://localhost/capitanmartu/research.html">More</a>  
+
+                              
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/twitch.png" alt="Image" class="twitchIMG tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Twitch Channel</h4>
+                            <p class="tm-margin-b-20">Check out my Twitch channel, where I stream several different games (Starcraft 2 mostly).</p>
+                            <a target ="blank" href="https://www.twitch.tv/capitanmartu" class="tm-btn">Go to Channel</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <div class="aboutMeDiv">
+                                <img src="img/myself.jpg" alt="Image" class="aboutMe tm-margin-b-20 img-fluid">
+                            </div>
+                            <h4 class="tm-margin-b-20 tm-gold-text">About Me</h4>
+                            <p class="tm-margin-b-20">Get to know a little bit more about myself, about my research and gamer life.</p>
+                            <a href="about.html" class="tm-btn">Get to know me</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/teaching.jpeg" alt="Image" class="teaching tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Teaching</h4>
+                            <p class="tm-margin-b-20">Download and check out the resources I have created for my courses.</p>
+                            <a href="teaching.html" class="tm-btn">Go Learn</a>    
+                        </div>  
+
+                    </div>
+                </div> <!-- row -->
+
+        </section>
+       
+</body>
+</html>
